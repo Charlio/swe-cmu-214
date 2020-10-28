@@ -1,3 +1,5 @@
+package rec01;
+
 /**
  * Interface describing a first-in, first-out structure for integers. Values are 
  * added at the tail, and removed from the head. Queues are typically used to 

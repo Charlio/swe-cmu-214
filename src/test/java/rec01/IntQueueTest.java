@@ -1,7 +1,8 @@
-import org.junit.Before;
-import org.junit.Test;
+package rec01;
 
-import static org.junit.Assert.*;
+import org.junit.Before;
+import rec01.ArrayIntQueue;
+import rec01.IntQueue;
 
 
 public class IntQueueTest {
