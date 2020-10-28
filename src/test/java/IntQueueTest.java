@@ -15,7 +15,7 @@ public class IntQueueTest {
     @Test
     public void testInitialQueue() {
         assertTrue(queue.isEmpty());
-        assertEquals(1, queue.size());
+        assertEquals(0, queue.size());
         assertNull(queue.peek());
         assertNull(queue.dequeue());
     }
