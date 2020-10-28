@@ -1,0 +1,6 @@
+build/
+.css/
+.empty/
+.gradle/
+.idea/
+.img/
