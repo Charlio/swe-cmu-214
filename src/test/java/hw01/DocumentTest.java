@@ -20,6 +20,7 @@ public class DocumentTest {
         try {
             doc = new Document(weblink);
         } catch (IOException ignored) {
+            System.out.println("Failed to load " + weblink);
         }
     }
 

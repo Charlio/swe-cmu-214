@@ -1,0 +1,24 @@
+"https://en.wikipedia.org/wiki/Dragon"
+"https://en.wikipedia.org/wiki/Michelangelo"
+"https://en.wikipedia.org/wiki/Helianthus"
+"https://en.wikipedia.org/wiki/Standard_Oil"
+"https://en.wikipedia.org/wiki/Scarlett_Johansson"
+"https://en.wikipedia.org/wiki/Snake"
+"https://en.wikipedia.org/wiki/General_Motors"
+"https://en.wikipedia.org/wiki/The_Beatles"
+"https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+"https://en.wikipedia.org/wiki/Pine"
+
+
+Result:
+
+https://en.wikipedia.org/wiki/Dragon -> https://en.wikipedia.org/wiki/Snake
+https://en.wikipedia.org/wiki/Michelangelo -> https://en.wikipedia.org/wiki/Vincent_van_Gogh
+https://en.wikipedia.org/wiki/Helianthus -> https://en.wikipedia.org/wiki/Snake
+https://en.wikipedia.org/wiki/Standard_Oil -> https://en.wikipedia.org/wiki/Michelangelo
+https://en.wikipedia.org/wiki/Scarlett_Johansson -> https://en.wikipedia.org/wiki/General_Motors
+https://en.wikipedia.org/wiki/Snake -> https://en.wikipedia.org/wiki/Dragon
+https://en.wikipedia.org/wiki/General_Motors -> https://en.wikipedia.org/wiki/Scarlett_Johansson
+https://en.wikipedia.org/wiki/The_Beatles -> https://en.wikipedia.org/wiki/Dragon
+https://en.wikipedia.org/wiki/Vincent_van_Gogh -> https://en.wikipedia.org/wiki/Michelangelo
+https://en.wikipedia.org/wiki/Pine -> https://en.wikipedia.org/wiki/Dragon
