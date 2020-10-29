@@ -2,8 +2,6 @@ package rec01;
 
 import org.junit.Before;
 import org.junit.Test;
-import rec01.ArrayIntQueue;
-import rec01.IntQueue;
 
 import static org.junit.Assert.*;
 
