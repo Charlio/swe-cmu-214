@@ -1,7 +1,5 @@
 package rec03;
 
-import edu.cmu.cs.cs214.rec03.SortedIntList;
-
 /**
  * InheritanceSortedIntList -- a variant of a SortedIntList that keeps 
  * count of the number of attempted element insertions (not to be confused
@@ -12,25 +10,7 @@ import edu.cmu.cs.cs214.rec03.SortedIntList;
  *
  */
 public class InheritanceSortedIntList extends SortedIntList {
-	// the number of attempted element insertions
-	private int totalAdded;
-
-	@Override
-    public boolean add(int val1) {
-	    this.totalAdded++;
-        return super.add(val1);
+    public int getTotalAdded() {
+        return 0;
     }
-
-	
-	/**
-	 * Gets the total number of attempted int insertions to the list since it
-	 * was created.
-	 * 
-	 * @return total number of integers added to the list.
-	 */
-	public int getTotalAdded()
-	{
-		return this.totalAdded;
-	}
-
 }

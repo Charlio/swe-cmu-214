@@ -4,10 +4,10 @@ public class AbsOperator implements UnaryOperator {
 
 	@Override
 	public double apply(double arg) {
-		return 0;
+		return Math.abs(arg);
 	}
 	@Override
 	public String toString() {
-		return "";
+		return "abs";
 	}
 }
