@@ -7,7 +7,7 @@ package rec03;
  *
  */
 public interface IntegerList {
-	
+
 	/**
 	 * Adds the specified int to the end of the list.
 	 * 
@@ -58,6 +58,4 @@ public interface IntegerList {
 	 * @return number of elements in the list
 	 */
 	public int size();
-	
-
 }

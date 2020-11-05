@@ -1,6 +1,6 @@
 package hw03.TemplateMethod;
 
-import edu.cmu.cs.cs214.hw3.PermutationGenerator;
+import hw03.PermutationGenerator;
 
 import java.util.ArrayList;
 

@@ -9,56 +9,47 @@ package rec03;
  * @author Nora Shoemaker
  *
  */
-									  
-// HINT: Take a look at the UML diagram to see what DelegationSortedIntList 
-//       should implement.
-public class DelegationSortedIntList extends SortedIntList implements IntegerList {
 
-	private SortedIntList list = new SortedIntList();
-	// the number of attempted element insertions
-	private int totalAdded;
 
-	public boolean add(int val) {
-	    this.totalAdded++;
-	    return list.add(val);
+public class DelegationSortedIntList {
+    private final SortedIntList list;
+    private int totalAdded;
+
+    public DelegationSortedIntList() {
+        list = new SortedIntList();
+        totalAdded = 0;
     }
 
-    @Override
+    public boolean add(int num) {
+        if (!list.add(num)) {
+            return false;
+        } else {
+            totalAdded++;
+            return true;
+        }
+    }
+
     public boolean addAll(IntegerList list) {
-	    this.totalAdded += list.size();
-	    return this.list.addAll(list);
+        boolean success = false;
+        for (int i = 0; i < list.size(); i++) {
+            success = add(list.get(i));
+        }
+        return success;
     }
 
-    @Override
-    public int get(int index) {
-        return this.list.get(index);
-    }
-
-    @Override
     public boolean remove(int num) {
-        return this.list.remove(num);
+        return list.remove(num);
     }
 
-    @Override
     public boolean removeAll(IntegerList list) {
-	    this.totalAdded -= list.size();
         return this.list.removeAll(list);
     }
 
-    @Override
     public int size() {
-        return this.list.size();
+        return list.size();
     }
 
-    /**
-	 * Gets the total number of attempted int insertions to the list since it.
-	 * was created.
-	 * 
-	 * @return total number of integers added to the list.
-	 */
-	public int getTotalAdded()
-	{
-		return totalAdded;
-	}
-
+    public int getTotalAdded() {
+        return totalAdded;
+    }
 }
