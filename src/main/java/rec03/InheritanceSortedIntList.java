@@ -10,7 +10,33 @@ package rec03;
  *
  */
 public class InheritanceSortedIntList extends SortedIntList {
+    private int totalAdded;
+
+    public InheritanceSortedIntList() {
+        totalAdded = 0;
+    }
+
+    @Override
+    public boolean add(int num) {
+        boolean success = super.add(num);
+        if (success) {
+            totalAdded++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public boolean addAll(IntegerList list) {
+        boolean success = false;
+        for (int i = 0; i < list.size(); i++) {
+            success |= add(list.get(i));
+        }
+        return success;
+    }
+
     public int getTotalAdded() {
-        return 0;
+        return totalAdded;
     }
 }

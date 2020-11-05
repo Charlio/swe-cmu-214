@@ -10,8 +10,45 @@ package rec03;
  *
  */
 
-public class DelegationSortedIntList extends SortedIntList implements IntegerList {
+public class DelegationSortedIntList {
+    private final SortedIntList list;
+    private int totalAdded;
+
+    public DelegationSortedIntList() {
+        list = new SortedIntList();
+        totalAdded = 0;
+    }
+
+    public boolean add(int num) {
+        if (!list.add(num)) {
+            return false;
+        } else {
+            totalAdded++;
+            return true;
+        }
+    }
+
+    public boolean addAll(IntegerList list) {
+        boolean success = false;
+        for (int i = 0; i < list.size(); i++) {
+            success = add(list.get(i));
+        }
+        return success;
+    }
+
+    public boolean remove(int num) {
+        return list.remove(num);
+    }
+
+    public boolean removeAll(IntegerList list) {
+        return this.list.removeAll(list);
+    }
+
+    public int size() {
+        return list.size();
+    }
+
     public int getTotalAdded() {
-        return 0;
+        return totalAdded;
     }
 }

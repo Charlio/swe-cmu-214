@@ -1,12 +1,10 @@
 package hw03;
 
-import edu.cmu.cs.cs214.hw2.expression.Expression;
-import edu.cmu.cs.cs214.hw2.termcalc.ExpressionMaker;
-import edu.cmu.cs.cs214.hw2.termcalc.ExpressionMakerImpl;
-import edu.cmu.cs.cs214.hw2.termcalc.TerminalCalculator;
+import hw02.expression.Expression;
+import hw02.termcalc.ExpressionMaker;
+import hw02.termcalc.ExpressionMakerImpl;
+import hw02.termcalc.TerminalCalculator;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -18,7 +16,6 @@ public class Main {
 
         ExpressionMaker expressionMaker = new ExpressionMakerImpl();
         TerminalCalculator calculator = new TerminalCalculator(expressionMaker);
-
 
         try (Scanner scanner = new Scanner(System.in)) {
             do {

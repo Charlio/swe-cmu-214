@@ -1,7 +1,5 @@
 package hw03;
 
-import edu.cmu.cs.cs214.hw3.PermutationGenerator;
-import edu.cmu.cs.cs214.hw3.PermutationInterface;
 import org.junit.Assert;
 import org.junit.Test;
 

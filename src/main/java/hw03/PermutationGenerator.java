@@ -1,6 +1,6 @@
 package hw03;
 
-import edu.cmu.cs.cs214.hw3.PermutationInterface;
+import hw03.PermutationInterface;
 
 import java.util.ArrayList;
 import java.util.Arrays;

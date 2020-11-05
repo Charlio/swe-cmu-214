@@ -1,7 +1,7 @@
 package hw03;
 
-import edu.cmu.cs.cs214.hw2.expression.Expression;
-import edu.cmu.cs.cs214.hw2.expression.NumExpression;
+import hw02.expression.Expression;
+import hw02.expression.NumExpression;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -13,8 +13,7 @@ import java.util.HashSet;
 public class Cryptarithms {
 
 
-
-    public Cryptarithms(String[] input) {
+    public Cryptarithms(String input) {
 
         String[] exp = input.split("=");
         char[] leftexp = exp[0].toCharArray();
