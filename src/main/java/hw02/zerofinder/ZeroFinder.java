@@ -7,8 +7,6 @@ import hw02.expression.VariableExpression;
  * Finds zeros of arbitrary functions using Newton's method.
  */
 public class ZeroFinder {
-	// TODO: Write the zero method
-
 	/**
 	 * Returns a zero of the specified function using Newton’s method with
 	 * approxZero as the initial estimate.
@@ -24,6 +22,11 @@ public class ZeroFinder {
 	 * @return a value x for which f(x) is "close to zero" (<= tolerance)
 	 */
 	public static double zero(Expression fn, VariableExpression x, double approxZero, double tolerance) {
-		return 0;
+		x.store(approxZero);
+		DerivativeExpression derExp = new DerivativeExpression(fn, x);
+		while (Math.abs(fn.eval()) > tolerance) {
+			x.store(x.eval() - fn.eval() / derExp.eval());
+		}
+		return x.eval();
 	}
 }

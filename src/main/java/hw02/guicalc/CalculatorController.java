@@ -1,24 +1,12 @@
 package hw02.guicalc;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.GridLayout;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.List;
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.WindowConstants;
-
 import hw02.operator.BinaryOperator;
 import hw02.operator.UnaryOperator;
 
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
+import javax.swing.*;
+import java.awt.*;
+import java.util.List;
+import java.util.*;
 
 /**
  * CalculatorController - a JPanel containing a GUI for a calculator.

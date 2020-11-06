@@ -127,11 +127,11 @@ public class AvlTreeSet {
     private static class Node {
         // @ invariant Math.abs(left.height - right.height) <= 1
 
-        private int mValue;
-        private int mHeight;
-        private Node mLeft;
-        private Node mRight;
-        private int mSize;
+        private final int mValue;
+        private final int mHeight;
+        private final Node mLeft;
+        private final Node mRight;
+        private final int mSize;
 
         Node() {
             mValue = -1;
@@ -146,7 +146,8 @@ public class AvlTreeSet {
             mLeft = left;
             mRight = right;
             mHeight = Math.max(left.getHeight(), right.getHeight()) + 1;
-            mSize = left.size() + right.size();
+            //TODO mSize = left.size() + right.size();
+            mSize = left.size() + right.size() + 1;
         }
 
         public int size() {
@@ -182,11 +183,14 @@ public class AvlTreeSet {
                 return new Node(mValue, mLeft.insert(value), mRight).balance();
             }
 
+            /*
             if (value > mValue) {
                 return new Node(mValue, mLeft, mRight.insert(value)).balance();
             }
 
             return this;
+            */
+            return new Node(mValue, mLeft, mRight.insert(value)).balance();
         }
 
         public Node remove(int value) {
@@ -225,7 +229,8 @@ public class AvlTreeSet {
                 return mLeft.contains(value);
             }
 
-            return false;
+            // TODO return false;
+            return mRight.contains(value);
         }
 
         public int getMax() {

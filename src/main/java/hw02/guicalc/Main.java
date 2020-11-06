@@ -1,11 +1,6 @@
 package hw02.guicalc;
 
-<<<<<<< HEAD
-import hw02.operator.BinaryOperator;
-import hw02.operator.UnaryOperator;
-=======
 import hw02.operator.*;
->>>>>>> starter
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -21,11 +16,6 @@ public class Main {
     public static void main(String[] args) {
         // TODO: Replace null with your own unary operators. Use a Linked HashSet so operators are displayed in order.
         Set<UnaryOperator> unaryOperators = new LinkedHashSet<>();
-<<<<<<< HEAD
-        
-        // TODO: Replace null with your own binary operators. Use a Linked HashSet so operators are displayed in order
-        Set<BinaryOperator> binaryOperators = new LinkedHashSet<>();
-=======
         unaryOperators.add(new AbsOperator());
         unaryOperators.add(new NegOperator());
         
@@ -36,7 +26,6 @@ public class Main {
         binaryOperators.add(new MulOperator());
         binaryOperators.add(new DivOperator());
         binaryOperators.add(new ExpOperator());
->>>>>>> starter
         
         new GuiCalculator(unaryOperators, binaryOperators);
     }

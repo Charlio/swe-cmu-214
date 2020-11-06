@@ -9,6 +9,6 @@ public class NegOperator implements UnaryOperator {
 
 	@Override
 	public String toString() {
-		return "-";
+		return "neg";
 	}
 }

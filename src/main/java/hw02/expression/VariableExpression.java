@@ -14,6 +14,9 @@ package hw02.expression;
  */
 public class VariableExpression implements Expression {
 
+	private final String name;
+	private double value;
+
 	/**
 	 * Constructs a variable with the specified name, whose initial value is
 	 * zero.
@@ -23,19 +26,18 @@ public class VariableExpression implements Expression {
 	 *            other variables in the same expression.
 	 */
 	public VariableExpression(String name) {
-		// TODO: Complete this method.
+		this.name = name;
+		this.value = 0;
 	}
 
 	@Override
 	public double eval() {
-		// TODO: Complete this method.
-		return 0;
+		return value;
 	}
 
 	@Override
 	public String toString() {
-		// TODO: Complete this method.
-		return null;
+		return name;
 	}
 
 	/**
@@ -45,14 +47,13 @@ public class VariableExpression implements Expression {
 	 *            the new value of this variable
 	 */
 	public void store(double value) {
-		// TODO: Complete this method.
+		this.value = value;
 	}
 
 	/**
 	 * @return the name of this variable
 	 */
 	public String name() {
-		// TODO: Complete this method.
-		return null;
+		return name;
 	}
 }

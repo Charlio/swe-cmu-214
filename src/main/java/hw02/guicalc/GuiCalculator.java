@@ -1,11 +1,12 @@
 package hw02.guicalc;
 
+import hw02.operator.BinaryOperator;
+import hw02.operator.UnaryOperator;
+
+import javax.swing.*;
 import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
-import javax.swing.SwingUtilities;
-import hw02.operator.BinaryOperator;
-import hw02.operator.UnaryOperator;
 
 /**
  * GuiCalculator - creates and runs a new CalculatorController to visualize a desktop calculator.

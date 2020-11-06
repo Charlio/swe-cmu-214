@@ -1,6 +1,8 @@
 package hw02.termcalc;
-import java.util.Objects;
+
 import hw02.expression.Expression;
+
+import java.util.Objects;
 
 /**
  * TerminalCalculator - a command line calculator.

@@ -1,6 +1,7 @@
 package hw02.termcalc;
 
 import hw02.expression.Expression;
+
 import java.util.Scanner;
 
 /**
@@ -11,9 +12,8 @@ public class Main {
      * @param args program arguments
      */
     public static void main(String[] args) {
-        //TODO: Replace null with an instance of your own ExpressionMaker
         ExpressionMaker expressionMaker = new ExpressionMakerImpl();
-        TerminalCalculator calculator = new TerminalCalculator(null);
+        TerminalCalculator calculator = new TerminalCalculator(expressionMaker);
 
         try (Scanner scanner = new Scanner(System.in)) {
             do {
