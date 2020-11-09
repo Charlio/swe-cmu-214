@@ -6,16 +6,14 @@ import java.util.List;
 
 public class PermutationWithIterator<E> implements Iterable<List<E>> {
     private final List<E> elements;
-    private final PermIterator it;
 
     public PermutationWithIterator(List<E> elements) {
         this.elements = new ArrayList<>(elements);
-        it = new PermIterator();
     }
 
     @Override
     public Iterator<List<E>> iterator() {
-        return it;
+        return new PermIterator();
     }
 
     private class PermIterator implements Iterator<List<E>> {
