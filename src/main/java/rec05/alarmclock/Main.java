@@ -16,7 +16,7 @@ public class Main {
    * Creates an alarm clock set to go off in three seconds, with three
    * listeners. Each listener has a different behavior.
    * 
-   * @param args
+   * @param args command line arguments, ignored "java Main"
    */
   public static void main(String[] args) {
     SwingUtilities.invokeLater(new Runnable() {

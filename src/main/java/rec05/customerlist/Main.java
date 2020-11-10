@@ -9,35 +9,18 @@ import rec05.customerlist.gui.CustomerManagementUI;
  */
 public class Main {
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Runnable() {
-			@Override
-			public void run() {
-				new Main().createAndShowCustomerList();
-			}
-		});
+		SwingUtilities.invokeLater(() -> new Main().createAndShowCustomerList());
 	}
 
 	public void createAndShowCustomerList() {
-		// Create a new instance of the data structure maintaining customers
 		CustomerList customerList = new CustomerList();
-
-		// Create a new instance of our ui, passing on the data structure we
-		// created
 		CustomerManagementUI ui = new CustomerManagementUI(customerList);
 
-		// This handler sends a welcome email when a new customer is added
 		CustomerEventHandler marketingHandler = new MarketingLetters();
-
-		// This handler adds the new customer to our list of names on our
-		// management panel. Note the argument passed to the constructor.
-		CustomerEventHandler uiHandler = new CustomerListListener(
-				ui.getManagementPanel());
-
-		// Add the handlers we made.
+		CustomerEventHandler uiHandler = new CustomerListListener(ui.getManagementPanel());
 		customerList.addHandler(marketingHandler);
 		customerList.addHandler(uiHandler);
 
-		// Show the UI.
 		ui.show();
 	}
 }

@@ -8,7 +8,7 @@ public class Main {
 	/**
 	 * Creates a logger. Writes some debug and error messages.
 	 * 
-	 * @param args
+	 * @param args command line arguments, ignored "java Main"
 	 */
 	public static void main(String[] args) {
 		Logger logger = new Logger();

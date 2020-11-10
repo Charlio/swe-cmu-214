@@ -9,8 +9,7 @@ import java.io.PrintWriter;
  * either the console or an output file. Configurable via constant fields within
  * the class.
  * 
- * TODO Rewrite the code such that different loggers can be configured and
- * added.
+ * TODO Rewrite the code such that different loggers can be configured and added.
  */
 public class Logger {
 

@@ -16,7 +16,7 @@ public class Beeper implements AlarmListener {
 	public Beeper() {
 		try {
 			alarmSound = Applet.newAudioClip(new File(
-					"src/main/resources/alarm.wav").toURI().toURL());
+					"src/main/resources/rec05/alarm.wav").toURI().toURL());
 		} catch (MalformedURLException e) {
 			throw new RuntimeException(e);
 		}
