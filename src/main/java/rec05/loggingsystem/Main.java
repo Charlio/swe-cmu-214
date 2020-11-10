@@ -12,6 +12,10 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		Logger logger = new Logger();
+		logger.addListener(new ConsoleListener());
+		logger.addListener(new FileListener("log.txt"));
+
+		logger.start();
 
 		logger.writeDebug("This is a debug message.");
 		logger.writeError("This is an error message.");
@@ -29,7 +33,6 @@ public class Main {
 			}
 		}
 
-		// Shut down the logger
 		logger.close();
 	}
 }
