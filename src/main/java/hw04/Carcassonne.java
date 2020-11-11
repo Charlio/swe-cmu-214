@@ -1,54 +1,20 @@
 package hw04;
 
-import java.awt.EventQueue;
-
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
-import javax.swing.UnsupportedLookAndFeelException;
-
-import hw04.control.MainController;
-import hw04.view.util.GameMessage;
-
 /**
- * Carcassonne main class.
- * @author Timur Saglam
+ * Carcassonne Main Application Class.
+ * @author Charlio Xu
  */
 public final class Carcassonne {
-    private static final String LOOK_AND_FEEL_ERROR = "Could not use Nimbus LookAndFeel. Using default instead (";
-    private static final String CLOSING_BRACKET = ").";
-    private static final String NIMBUS = "Nimbus";
-    private static final String MAC = "Mac";
-    private static final String OS_NAME_KEY = "os.name";
-
     /**
      * Main method that starts the game.
-     * @param args are not used.
+     * @param args command line arguments.
      */
     public static void main(String[] args) {
-        setLookAndFeel();
-        MainController controller = new MainController();
-        EventQueue.invokeLater(() -> controller.startGame());
+        // create GUI
+        // create core Game
+        // create Controller
+        // start
     }
 
-    private Carcassonne() {
-        // private constructor ensures non-instantiability!
-    }
-
-    /**
-     * Tries to set a custom look and feel if the operating system is not Mac OS. This ensures a at least somewhat decent UI
-     * on Windows operating systems.
-     */
-    private static void setLookAndFeel() {
-        if (!System.getProperty(OS_NAME_KEY).startsWith(MAC)) {
-            for (LookAndFeelInfo lookAndFeel : UIManager.getInstalledLookAndFeels()) {
-                if (NIMBUS.equals(lookAndFeel.getName())) {
-                    try {
-                        UIManager.setLookAndFeel(lookAndFeel.getClassName());
-                    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException exception) {
-                        GameMessage.showError(LOOK_AND_FEEL_ERROR + exception.getMessage() + CLOSING_BRACKET);
-                    }
-                }
-            }
-        }
-    }
+    private Carcassonne() {}
 }

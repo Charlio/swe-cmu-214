@@ -1,0 +1,41 @@
+[
+    {
+        "tile_name": "A",
+        "is_start": false,
+        "copy": 2,
+        "image_name": "MonasteryRoad0.png",
+        "features": [
+            {
+                "feature_type": "Monastery",
+                "segments": [
+                    {
+                        "locs": [5],
+                        "center": 5
+                    }
+                ]
+            },
+            {
+                "feature_type": "Road",
+                "segments": [
+                    {
+                        "locs": [8],
+                        "center": 8
+                    }
+                ]
+            },
+            {
+                "feature_type": "Field",
+                "segments": [
+                    {
+                        "locs": [1,2,3,4,6,7,9],
+                        "center": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+
+    }
+]
+

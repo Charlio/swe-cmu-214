@@ -1,0 +1,821 @@
+[
+  {
+    "tile_name": "A",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [7],
+            "center": 7
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [11],
+            "center": 11
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,5,6,8,9,10,12,13],
+            "center": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "B",
+    "is_start": false,
+    "copy": 4,
+    "image_name": "Monastery0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [7],
+            "center": 7
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,5,6,8,9,10,11,12,13],
+            "center": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "C",
+    "is_start": false,
+    "copy": 1,
+    "image_name": "MonasteryCastle0.png",
+    "features": [
+      {
+        "feature_type": "City",
+        "has_shield": true,
+        "segments": [
+          {
+            "locs": [1,2,3,4,5,6,7,8,9,10,11,12,13],
+            "center": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "D",
+    "is_start": true,
+    "copy": 4,
+    "image_name": "CastleWallRoad0.png",
+    "features": [
+      {
+        "feature_type": "City",
+        "has_shield": false,
+        "segments": [
+          {
+            "locs": [2,3,4],
+            "center": 3
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [6,7,8],
+            "center": 7
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,3,5], // 3 is also occupied by city
+            "center": 1
+          },
+          {
+            "locs": [9,10,11,12,13],
+            "center": 11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "E",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "F",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "G",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "H",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "I",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "J",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "K",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "L",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "M",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "N",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "O",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "P",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "Q",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "R",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "S",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "T",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "U",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "V",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "W",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tile_name": "X",
+    "is_start": false,
+    "copy": 2,
+    "image_name": "MonasteryRoad0.png",
+    "features": [
+      {
+        "feature_type": "Monastery",
+        "segments": [
+          {
+            "locs": [5],
+            "center": 5
+          }
+        ]
+      },
+      {
+        "feature_type": "Road",
+        "segments": [
+          {
+            "locs": [8],
+            "center": 8
+          }
+        ]
+      },
+      {
+        "feature_type": "Field",
+        "segments": [
+          {
+            "locs": [1,2,3,4,6,7,9],
+            "center": 2
+          }
+        ]
+      }
+    ]
+  }
+]
