@@ -15,12 +15,12 @@ public class Cryptarithm {
     private static final double DELTA = 1e-5;
 
     private Expression leftExp, rightExp;
-    private final List<Character> varNames;
-    private final List<VariableExpression> vars;
-    private final Set<Character> leadingVarNames;
-    private final Permutation<Integer> permutation;
+    private List<Character> varNames;
+    private List<VariableExpression> vars;
+    private Set<Character> leadingVarNames;
+    private Permutation<Integer> permutation;
 
-    public Cryptarithm(String[] exps) throws InvalidCryptarithm {
+    private void init(String[] exps) throws InvalidCryptarithm {
         varNames = new ArrayList<>();
         vars = new ArrayList<>();
         leadingVarNames = new HashSet<>();
@@ -29,6 +29,12 @@ public class Cryptarithm {
         }
         List<Integer> digits = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
         permutation = new Permutation<>(digits, vars.size());
+    }
+
+    public Cryptarithm() {}
+
+    public Cryptarithm(String[] exps) throws InvalidCryptarithm {
+        init(exps);
     }
 
     /**
@@ -102,6 +108,16 @@ public class Cryptarithm {
             case "*" -> new MulOperator();
             default -> throw new InvalidCryptarithm();
         };
+    }
+
+    public List<String> solve(String cry) {
+        String[] exps = cry.split(" ");
+        try {
+            init(exps);
+        } catch (InvalidCryptarithm e) {
+            return new ArrayList<>();
+        }
+        return generateSolutions();
     }
 
     public List<String> generateSolutions() {

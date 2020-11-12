@@ -1,5 +1,7 @@
 package rec06.gui;
 
+import hw03.Cryptarithm;
+
 import javax.swing.*;
 
 /**
@@ -18,8 +20,8 @@ public class Main {
 
              */
 
-             // Your code goes here
-
+            Cryptarithm solver = new Cryptarithm();
+            new CryptarithmSolverGui(solver);
         });
     }
 }

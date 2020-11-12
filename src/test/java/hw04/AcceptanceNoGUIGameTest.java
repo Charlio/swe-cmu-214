@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * Test suite to accept core Carcassonne game implementation without GUI
  */
 public class AcceptanceNoGUIGameTest {
-
+    /*
     private Game createGame(String tileFileName, String[] playerNames, String configFileName) {
         String resDir = "src/test/resources/hw04/";
         String tileFilePath = resDir + tileFileName;
@@ -76,4 +76,5 @@ public class AcceptanceNoGUIGameTest {
     public void testSimpleGameEndWithTenTurns() {
         Game game = createGame("simple-game-2.json", new String[]{"Dipper", "Leelee"}, "default.config");
     }
+    */
 }

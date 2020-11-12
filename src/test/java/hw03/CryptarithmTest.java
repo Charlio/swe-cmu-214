@@ -94,4 +94,16 @@ public class CryptarithmTest {
             fail();
         }
     }
+
+    @Test
+    public void testSolveInterface() {
+        String cry = "JEDER + LIEBT = BERLIN";
+        Cryptarithm cryptarithm = new Cryptarithm();
+        List<String> res = cryptarithm.solve(cry);
+        assertEquals(2, res.size());
+        List<String> expected = Arrays.asList(
+                "{J=6, E=3, D=4, R=8, L=7, I=5, B=1, T=2, N=0}",
+                "{J=4, E=3, D=6, R=8, L=9, I=5, B=1, T=2, N=0}");
+        assertArrayEquals(expected.toArray(), res.toArray());
+    }
 }

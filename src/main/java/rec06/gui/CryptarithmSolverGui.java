@@ -2,22 +2,20 @@ package rec06.gui;
 
 import javax.swing.*;
 
-import rec06.solver.CryptarithmSolver;
+import hw03.Cryptarithm;
 
 /**
  * Gui interface for CryptarithmSolver.
  */
 public class CryptarithmSolverGui extends JFrame {
-    //Class constants
     private static final String TITLE = "Cryptarithm Solver";
 
-    //GUI components
     private InputPanel inputPanel;
     private JTextArea solutionArea;
 
-    private CryptarithmSolver solver;
+    private Cryptarithm solver;
 
-    public CryptarithmSolverGui(CryptarithmSolver solver) {
+    public CryptarithmSolverGui(Cryptarithm solver) {
         /* TODO:
 
            Do the following in this constructor. Each of these steps requires one (or in the case of step 6, two)
@@ -47,9 +45,16 @@ public class CryptarithmSolverGui extends JFrame {
               https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#pack()
 
          */
-
-        // Your code for steps 1-7 goes here.
-
+        super(TITLE);
+        this.solver = solver;
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        inputPanel = new InputPanel();
+        solutionArea = new JTextArea();
+        setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
+        add(inputPanel);
+        add(solutionArea);
+        pack();
+        setVisible(true);
     }
 
     private class InputPanel extends JPanel {
@@ -83,9 +88,17 @@ public class CryptarithmSolverGui extends JFrame {
                  https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#add-java.awt.Component-
 
             */
-
-            // Your code for steps 1-4 goes here.
-
+            solveButton = new JButton(SOLVE_BUTTON_TEXT);
+            input = new JTextField(PROMPT, INPUT_FIELD_WIDTH);
+            solveButton.addActionListener(actionEvent -> {
+                StringBuilder sb = new StringBuilder();
+                for (String soln : solver.solve(input.getText())) {
+                    sb.append(soln).append("\n");
+                }
+                solutionArea.setText(sb.toString());
+            });
+            add(solveButton);
+            add(input);
         }
     }
 }

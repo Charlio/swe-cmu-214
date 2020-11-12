@@ -107,7 +107,7 @@
         "feature_type": "Field",
         "segments": [
           {
-            "locs": [1,3,5], // 3 is also occupied by city
+            "locs": [1,3,5],
             "center": 1
           },
           {
