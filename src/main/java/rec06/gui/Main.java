@@ -2,9 +2,6 @@ package rec06.gui;
 
 import javax.swing.*;
 
-import rec06.solver.CryptarithmSolver;
-import rec06.solver.TheBestCryptarithmSolver;
-
 /**
  * Entry point of your program
  */
@@ -22,10 +19,7 @@ public class Main {
              */
 
              // Your code goes here
-        	
-        	CryptarithmSolver cry = new TheBestCryptarithmSolver();
 
-        	CryptarithmSolverGui cryGui = new CryptarithmSolverGui(cry);
         });
     }
 }

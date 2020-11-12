@@ -1,8 +1,5 @@
 package rec06.gui;
 
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-
 import javax.swing.*;
 
 import rec06.solver.CryptarithmSolver;
@@ -18,7 +15,7 @@ public class CryptarithmSolverGui extends JFrame {
     private InputPanel inputPanel;
     private JTextArea solutionArea;
 
-    private final CryptarithmSolver solver;
+    private CryptarithmSolver solver;
 
     public CryptarithmSolverGui(CryptarithmSolver solver) {
         /* TODO:
@@ -52,18 +49,7 @@ public class CryptarithmSolverGui extends JFrame {
          */
 
         // Your code for steps 1-7 goes here.
-    	
-    	JFrame frame = new JFrame(TITLE);
-    	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    	inputPanel = new InputPanel();
-    	solutionArea = new JTextArea();
-    	frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.PAGE_AXIS));
-    	frame.add(inputPanel);
-    	frame.add(solutionArea);
-    	frame.pack();
-    	frame.setVisible(true);
 
-        this.solver = solver;
     }
 
     private class InputPanel extends JPanel {
@@ -99,24 +85,7 @@ public class CryptarithmSolverGui extends JFrame {
             */
 
             // Your code for steps 1-4 goes here.
-        	
-        	solveButton = new JButton(SOLVE_BUTTON_TEXT);	
-        	input = new JTextField(PROMPT, INPUT_FIELD_WIDTH);
-        	input.addMouseListener(new MouseAdapter(){
-                @Override
-                public void mouseClicked(MouseEvent e){
-                    input.setText("");
-                }
-            });
-        	solveButton.addActionListener(e -> {
-        		if (input.getText() != null) {
-        			solutionArea.setText(solver.solve(input.getText()).toString());
-        		}
-        	});
-        	
-        	this.add(solveButton);
-        	this.add(input);
-        	
+
         }
     }
 }
