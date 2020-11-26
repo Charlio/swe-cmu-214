@@ -17,7 +17,7 @@ public class TicTacToeImpl implements TicTacToe {
     private final List<GameChangeListener> gameChangeListeners  = new ArrayList<>();
 
     /** The game board. First index is row, second index is column. */
-    private final Player gameGrid[][] = new Player[GRID_SIZE][GRID_SIZE];
+    private final Player[][] gameGrid = new Player[GRID_SIZE][GRID_SIZE];
 
     /** The index of the current player in players (0 is X, 1 is O) */
     private int currentPlayerIndex;
